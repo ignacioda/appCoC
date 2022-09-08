@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#0B0A07"
+    android:backgroundTintMode="src_in"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/qu_te_conviene"
+        android:textColor="#E7E5E5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Cargando Inflación actual..."
+        android:textColor="#E7E5E5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/inputContado"
+        android:layout_width="272dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/edit_text_forma"
+        android:ems="10"
+        android:hint="@string/precio_en_contado"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#706563"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/inputCuotas"
+        android:layout_width="272dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/edit_text_forma"
+        android:ems="10"
+        android:hint=" Precio en cuotas"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#706563"
+        app:layout_constraintEnd_toEndOf="@+id/inputContado"
+        app:layout_constraintStart_toStartOf="@+id/inputContado"
+        app:layout_constraintTop_toBottomOf="@+id/inputContado" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="272dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_text_forma"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputCuotas"
+        app:layout_constraintStart_toStartOf="@+id/inputCuotas"
+        app:layout_constraintTop_toBottomOf="@+id/inputCuotas"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="157dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
