@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9DC7C8"
-    android:backgroundTint="#0B0A07"
+    android:backgroundTint="#0d1321"
     tools:context=".MainActivity2">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_marginTop="100dp"
         android:fontFamily="sans-serif-condensed-light"
         android:text="@string/test"
-        android:textColor="#E7E5E5"
+        android:textColor="#83e8ba"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
         android:fontFamily="sans-serif-condensed-light"
         android:padding="15dp"
         android:text="@string/textview"
-        android:textColor="#E7E5E5"
+        android:textColor="#83e8ba"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

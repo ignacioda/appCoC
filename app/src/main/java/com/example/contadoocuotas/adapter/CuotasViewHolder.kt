@@ -23,6 +23,6 @@ class CuotasViewHolder(view: View): RecyclerView.ViewHolder(view) {
         df.roundingMode = RoundingMode.DOWN
 
         tvcuota.text = "Cuota n° "+dcCuotas.nCuota.toString()
-        tvmonto.text= "$ "+df.format(dcCuotas.precioCuota)
+        tvmonto.text= "$ "+df.format(dcCuotas.vCuota)
     }
 }

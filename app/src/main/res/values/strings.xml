@@ -9,5 +9,7 @@
     <string name="textview">TextView</string>
     <string name="volver">Volver</string>
     <string name="test">test</string>
+    <string name="precioencuotas">Precio en cuotas</string>
+    <string name="cargando_inflaci_n_actual">Cargando Inflación actual...</string>
 
 </resources>

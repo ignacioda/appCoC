@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, Se
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+        supportActionBar?.hide()
+
+
         //callBcra()
         val fechaHoy =getCurrentDateTime().toString()
         mBinding.textView3.text="Inflación Agosto 2022 6,5%"

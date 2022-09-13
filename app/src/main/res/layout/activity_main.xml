@@ -6,22 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:backgroundTint="#0B0A07"
+    android:backgroundTint="#0d1321"
     android:backgroundTintMode="src_in"
     tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:fontFamily="sans-serif-condensed-light"
-        android:text="@string/qu_te_conviene"
-        android:textColor="#E7E5E5"
+        android:layout_width="274dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/crete_round"
+        android:text="¿Qué te conviene?"
+        android:textColor="#83e8ba"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,9 +31,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-light"
-        android:text="Cargando Inflación actual..."
-        android:textColor="#E7E5E5"
+        android:fontFamily="@font/crete_round"
+        android:text="@string/cargando_inflaci_n_actual"
+        android:textColor="#83e8ba"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonCalc"
@@ -46,11 +48,13 @@
         android:layout_marginTop="75dp"
         android:background="@drawable/edit_text_forma"
         android:ems="10"
+        android:fontFamily="@font/crete_round"
         android:hint="@string/precio_en_contado"
         android:importantForAutofill="no"
         android:inputType="number"
         android:padding="10dp"
         android:textColor="#706563"
+        android:textColorHint="#777777"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -62,12 +66,14 @@
         android:layout_marginTop="70dp"
         android:background="@drawable/edit_text_forma"
         android:ems="10"
-        android:hint=" Precio en cuotas"
+        android:fontFamily="@font/crete_round"
+        android:hint="@string/precioencuotas"
         android:imeOptions="actionDone"
         android:importantForAutofill="no"
         android:inputType="number"
         android:padding="10dp"
         android:textColor="#706563"
+        android:textColorHint="#777777"
         app:layout_constraintEnd_toEndOf="@+id/inputContado"
         app:layout_constraintStart_toStartOf="@+id/inputContado"
         app:layout_constraintTop_toBottomOf="@+id/inputContado" />
@@ -77,8 +83,11 @@
         android:layout_width="272dp"
         android:layout_height="71dp"
         android:layout_marginTop="25dp"
+        android:autofillHints="Cantidad de cuotas"
         android:background="@drawable/edit_text_forma"
+        android:fontFamily="@font/crete_round"
         android:padding="10dp"
+        android:textColorHint="#777777"
         app:layout_constraintEnd_toEndOf="@+id/inputCuotas"
         app:layout_constraintStart_toStartOf="@+id/inputCuotas"
         app:layout_constraintTop_toBottomOf="@+id/inputCuotas"
@@ -89,10 +98,44 @@
         android:layout_width="157dp"
         android:layout_height="58dp"
         android:layout_marginTop="124dp"
+        android:fontFamily="@font/crete_round"
         android:text="@string/calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
         tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inputCuotas"
+        app:layout_constraintEnd_toStartOf="@+id/inputCuotas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inputCuotas"
+        app:srcCompat="@drawable/ic_baseline_credit_card_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="39dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inputContado"
+        app:layout_constraintEnd_toStartOf="@+id/inputContado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inputContado"
+        app:srcCompat="@drawable/ic_baseline_money_24" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        app:srcCompat="@drawable/ic_baseline_view_agenda_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
